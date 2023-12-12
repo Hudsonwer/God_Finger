@@ -1,14 +1,14 @@
 <div>
 <h1 align="center"> God Finger </h1>
 
-<h3 align="center"> The application developed is a 2D game, where the objective is to eliminate, through clicks, as many insects as possible present in the scene. For each insect eliminated, the player accumulates points. These insects are classified into common insects and rare insects. Rare insects have a higher scoring value than simple insects. The score is shown in the top left corner of the screen and is updated in real time. In the upper right corner, there is the icon for the menu, where the settings are located, which allow movement between the game screen and the bestiary, as well as an icon indicating the game's background music, allowing changes in volume, and changing the music itself. For this function, a music API called "Vagalume API" will be used. </h3>
+<h3 align="center"> This application allows the customer to use a much-researched tool within the music media, their lyrics! The program consists of using the Valume API (the largest chords site in Brazil) to recreate the mechanics of a song's lyrics, so you can sing with your friends at karaoke following your favorite song lyrics! The database is almost unlimited! </h3>
 
 <div>
     <div>
-    <h4 align="center"> • 🎮 killing insects 🕹️• </h4>
-        <h4 align="center"> • 🎮 improving your score 🕹️ • </h4>
-        <h4 align="center"> • 🎮 collecting new insects 🕹️ • </h4>
-        <h4 align="center"> • 🎮 all to the sound of music selected by the developers 🕹️ • </h4>
+    <h4 align="center"> • Sing with friends! • </h4>
+        <h4 align="center"> • Learn your favorite songs! • </h4>
+        <h4 align="center"> • Save the songs you're enjoying most at the moment! • </h4>
+        <h2 align="center"> • Come have fun!!! • </h2>
     </div>
 </div>
 

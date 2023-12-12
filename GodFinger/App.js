@@ -1,8 +1,7 @@
-import SearchButtom from "./src/components/searchButtom";
-
+import SearchButton from "./src/components/SearchButton";
 
 export default function App() {
   return (
-    <SearchButtom />
+    <SearchButton />
   );
 }

@@ -1,7 +1,9 @@
-import SearchButton from "./src/components/SearchButton";
+import React from 'react';
+import { MyTabs } from './src/components/Navigation/Routes';
+
 
 export default function App() {
   return (
-    <SearchButton />
+    <MyTabs />
   );
 }

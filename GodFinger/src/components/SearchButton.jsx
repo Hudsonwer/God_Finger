@@ -2,14 +2,15 @@ import React from 'react';
 import { useState } from 'react';
 import styles from "./SearchButton.module";
 import { View, Text, Image, TextInput, TouchableWithoutFeedback } from "react-native";
+import Cantor from './Cantor';
 
-const SearchButton = () => {
+const SearchButton = ({setSearchTreated}) => {
 
   const [Search, setSearch] = useState('');
 
   function Sent() {
     let SearchTreated = Search.trim().replace(/ /g, "%20");
-    console.log(SearchTreated)
+    setSearchTreated(SearchTreated)
   }
 
   return (

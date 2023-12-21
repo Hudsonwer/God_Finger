@@ -37,9 +37,6 @@ const Cantor = ({ artistaNome }) => {
                                     <Text>Posição Mundial</Text>
                                     <Text style={styles.cantorDetails2}>{Rank ?? "sem posição"}</Text>
                                 </View>
-                                <TouchableWithoutFeedback onPress={NewGuia}>
-                                    <Image style={styles.logo} source={require("../assets/prisma.png")} />
-                                </TouchableWithoutFeedback>
                             </View>
                         </View>
                     </View>

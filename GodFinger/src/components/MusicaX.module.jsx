@@ -7,6 +7,13 @@ const styles = StyleSheet.create({
     fontSize: 15,
     alignSelf: "center",
   },
+  musicaInfo: {
+    backgroundColor: "rgba(255,255,255,0.5)",
+    margin: 20,
+    marginTop: 5,
+    padding: 5,
+    borderRadius: 10,
+  }
 });
 
 export default styles

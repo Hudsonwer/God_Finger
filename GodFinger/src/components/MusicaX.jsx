@@ -1,28 +1,33 @@
 import React from 'react';
-import { View, Text, TouchableWithoutFeedback, Image } from "react-native";
+import { View, Text } from "react-native";
 import { useEffect, useState } from 'react';
-import ImagemArtista from './ImagemArtista';
 import styles from "./MusicaX.module";
 
 const MusicaX = ({ artista }) => {
     const [Quantidade, setQuantidade] = useState("")
-    const [Id, setId] = useState("")
+    const [Musga, setMusga] = useState("")
 
     useEffect(() => {
         async function getMusica() {
-            let Musica = await (await fetch("https://api.vagalume.com.br/search.art?q=" + artista + "&limit=5")).json()
+            let Musica = await (await fetch("https://api.vagalume.com.br/search.excerpt?q=" + artista + "&limit=5")).json()
             setQuantidade(Musica.response.numFound)
-            let ImagemName = await (await fetch("https://www.vagalume.com.br/" + Musica.response.docs[0].band + "/index.js")).json()
-            setId(ImagemName.artist.id)
+            setMusga(Musica)
         }
         getMusica()
-    })
-
+    }, [artista])
+    if (!Musga) {
+        return <Text>Bla</Text>
+    }
+console.log("aaaa",Musga.response.docs)
     return (
         <View>
-           <Text style={styles.Quantidade}>Numero de músicas encontradas - {Quantidade}</Text>
-           <ImagemArtista artista={Id}></ImagemArtista>
-           <Text>{Id}</Text>
+            <Text style={styles.Quantidade}>numero de bandas e musicas encontradas - {Quantidade}</Text>
+                {Musga.response.docs.map((value) => {
+                    return (<View style={styles.musicaInfo} key={value.id}>
+                        <Text>Título da musica - {value.title}</Text>
+                        <Text>Banda - {value.band}</Text>
+                    </View>);
+                })}
         </View>
     )
 }

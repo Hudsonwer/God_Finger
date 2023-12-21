@@ -6,15 +6,17 @@ const styles = StyleSheet.create({
     padding: 5,
     borderRadius: 10,
     margin: 20,
-    borderWidth: 1,
     justifyContent: "space-between",
     alignItems: "center",
     flexDirection: "row",
+    backgroundColor: "rgba(255,255,255,0.5)",
   },
 
   input: {
     fontSize: 25,
     flex: 1,
+    padding: 3,
+    color: "black",
   },
 
   logo: {

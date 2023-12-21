@@ -4,21 +4,21 @@ import SearchButton from '../SearchButton';
 import Cantor from '../Cantor';
 import { useState } from 'react';
 
-const Home = () => {
+const Artistas = () => {
 
     const [SearchTreated, setSearchTreated] = useState('')
     return (
-            <View style={styles.Background}>
-                <SearchButton setSearchTreated={setSearchTreated}></SearchButton>
+            <View style={styles.Fundo}>
+                <SearchButton setS={setSearchTreated}></SearchButton>
                 <Cantor artistaNome={SearchTreated}></Cantor>
             </View>
     )
 }
 const styles = StyleSheet.create({
-    Background: {
-        backgroundColor: "09C9D6",
+    Fundo: {
+        backgroundColor: "#09C9D6",
+        height: "100%",
     },
-
 });
 
-export default Home
+export default Artistas

@@ -1,8 +1,8 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Home from '../screen/Home';
-import Favorite from '../screen/Favorite';
+import Artistas from '../screen/Artistas';
+import Musicas from '../screen/Musicas';
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
@@ -11,8 +11,8 @@ export function MyTabs() {
     return (
         <NavigationContainer>
             <Navigator>
-                <Screen name="Musicas" component={Home} />
-                <Screen name="Musicas Favoritadas" component={Favorite} />
+                <Screen name="Artistas" component={Artistas} />
+                <Screen name="Musicas" component={Musicas} />
             </Navigator>
         </NavigationContainer>
     );
